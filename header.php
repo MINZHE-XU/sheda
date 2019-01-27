@@ -25,33 +25,39 @@
 <body>
 <!-- ********************************************************* -->
 <div id="header">
-    <div class="">
+    <div >
         <nav class="navbar navbar-expand-sm bg-success navbar-dark">
-            <a class="navbar-brand" href="#">City-Recycle</a>
+            <a class="navbar-brand" href="index.php">City-Recycle</a>
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <!-- Links -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="about.php" class="nav-link <?php echo ($currentPage == "about") ? 'active' : '' ?> " >About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="faq.php" class="nav-link <?php echo ($currentPage == "faq") ? 'active' : '' ?> " >FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.php" class="nav-link <?php echo ($currentPage == "contact") ? 'active' : '' ?> "  >Contact us</a>
-                    </li>
-                </ul>
+            </div>
+            <div class="navbar-nav">
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <!-- Links -->
+                    <ul class="nav navbar-nav ml-aut ">
+                        <li class="nav-item">
+                            <a href="about.php" class="nav-link <?php echo ($currentPage == "about") ? 'active' : '' ?> " >About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faq.php" class="nav-link <?php echo ($currentPage == "faq") ? 'active' : '' ?> " >FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.php" class="nav-link <?php echo ($currentPage == "contact") ? 'active' : '' ?> "  >Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-warning"  type="submit">
+                    <a href="recycle.php" class="text-light"  >Start Recycle</a>
+                </button>
             </div>
         </nav>
     </div>
 </div>
 
-
 <div id="main">
-    <div class="container">
+    <div>
